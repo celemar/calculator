@@ -17,18 +17,10 @@
   --key-color: hsl(30, 25%, 89%);
   --key-shadow: hsl(28, 16%, 65%);
 
-  /*   --accent-key: hsl(6, 63%, 50%); */
   --accent-key: hsl(5, 51%, 48%);
   --accent-key-shadow: hsl(6, 70%, 34%);
   
-  /* THEME 2 */
-  --light-gray-bg: hsl(0, 0%, 90%);
-  --grayish-red-bg: hsl(0, 5%, 81%);
-  --very-light-gray: hsl(0, 0%, 93%);
-
-
   --equal-clr: hsl(0, 0%, 100%);
-
   --white: hsl(0, 0%, 100%);
 }
 
@@ -99,8 +91,6 @@ body {
 }
 
 :root {
-/*   line-height: 1.5; */
-
   color: var(--other);
 
   font-synthesis: none;
@@ -199,7 +189,6 @@ input:checked {
   background-color: var(--accent-key);
 }
 
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -253,8 +242,6 @@ input:checked {
 }
 
 button {
-/*   width: 60px;
-  height: 60px; */
   height: 60px;
   line-height:64px;  
   border: none;
@@ -269,30 +256,6 @@ button {
 button:active {
   transform: translateY(4px);
 }
-
-
-/* button.clear {
-  grid-column: span 2;
-}
-
-button.equals {
-  grid-column: span 4;
-} */
-
-/* Custom layout */
-/* button.line-1 {
-  grid-column: span 3;
-}
-
-button.line-2,
-button.line-3,
-button.line-4 {
-  grid-column: span 1;
-}
-
-button.line-5 {
-  grid-column: span 2;
-} */
 
 .delBtn, .resetBtn {
   color: var(--white);
@@ -362,7 +325,7 @@ button:hover {
   }
 
   h1 {
-    margin-bottom: -0.1em;
+    margin-bottom: -0.2em;
   }
 
   .buttons-container {

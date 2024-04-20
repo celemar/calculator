@@ -19,10 +19,6 @@ function App() {
     }
   };
 
-/*   const handleClick= (value) => {
-    setInput(input + value);
-  }; */
-  
    const calculateResult = () => {
     try {
       setInput(eval(input).toString());
@@ -31,7 +27,7 @@ function App() {
     }
   };
 
-  const handleDelClick = () => {
+  const handleDelete = () => {
     setInput((prevInput) => prevInput.slice(0, -1));
   };
 
@@ -47,9 +43,7 @@ function App() {
         <div className="themes">
           <p>THEME</p>
           <div className="themes-btns">
-            <div className="labels"> 
-            {/*será que vale a pena o sr-only afinal pessoa n ve nada */}
-          
+            <div className="labels">         
               <label htmlFor="theme1"><span className="sr-only">Theme 1</span>1</label>
               <label htmlFor="theme2"><span className="sr-only">Theme 2</span>2</label>
               <label htmlFor="theme3"><span className="sr-only">Theme 3</span>3</label>
@@ -76,17 +70,12 @@ function App() {
       </header>
 
       <div className="screen">
-{/*         <input
-          type="text"
-          className="user-input"
-          value={calc.num ? calc.num : calc.res}
-          readOnly
-        /> */}
         <input
           className="user-input"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          aria-live="polite"
           readOnly
         />
       </div>
@@ -95,7 +84,7 @@ function App() {
         <button onClick={() => handleClick("7")}>7</button>
         <button onClick={() => handleClick("8")}>8</button>
         <button onClick={() => handleClick("9")}>9</button>
-        <button className="delBtn" onClick={() => handleDelClick()}>
+        <button className="delBtn" onClick={() => handleDelete()}>
           DEL
         </button>
         <button onClick={() => handleClick("4")}>4</button>
