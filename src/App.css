@@ -16,7 +16,7 @@
   --key-color: hsl(30, 25%, 89%);
   --key-shadow: hsl(28, 16%, 65%);
 
-  --accent-key: hsl(5, 51%, 48%);
+  --accent-key: #d13f30;
   --accent-key-shadow: hsl(6, 70%, 34%);
   
   --equal-clr: hsl(0, 0%, 100%);
