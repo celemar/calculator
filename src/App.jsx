@@ -5,13 +5,9 @@ function App() {
   const [input, setInput] = useState('');
 
   const handleClick = (value) => {
-    // Check if the last character of the input is an operator
     const lastCharIsOperator = ['+', '-', '*', '/'].includes(input.slice(-1));
-
-    // Check if the value is an operator
     const isOperator = ['+', '-', '*', '/'].includes(value);
   
-    // If last character is an operator and the new value is also an operator, replace the last operator
     if (lastCharIsOperator && isOperator) {
       setInput(input.slice(0, -1) + value);
     } else {
